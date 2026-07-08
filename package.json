@@ -1,0 +1,51 @@
+{
+  "name": "roguelite-core",
+  "version": "0.1.0",
+  "description": "Deterministic, content-agnostic auto-battler roguelike engine in pure TypeScript.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Tiago Maciel",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiagomaciels/roguelite-core.git"
+  },
+  "keywords": [
+    "roguelike",
+    "roguelite",
+    "auto-battler",
+    "game-engine",
+    "deterministic",
+    "prng",
+    "typescript",
+    "turn-based"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.check.json",
+    "test": "vitest run",
+    "coverage": "vitest run --coverage",
+    "lint": "eslint .",
+    "sim": "tsx scripts/simulate.ts"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^26.1.1",
+    "@vitest/coverage-v8": "^4.1.10",
+    "eslint": "^10.6.0",
+    "tsx": "^4.23.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.63.0",
+    "vitest": "^4.1.10"
+  }
+}
