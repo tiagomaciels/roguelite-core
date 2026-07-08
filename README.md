@@ -50,7 +50,7 @@ The engine is split into focused modules: RNG, battle math (damage,
 effectiveness, status, traits, move selection), procedural map generation, run
 reducers (the state machine for a full run), and a simulation harness. State
 transitions are pure functions over an immutable content snapshot, following a
-reducer pattern — see the architecture decision records in `docs/`.
+reducer pattern.
 
 ## Origin
 
